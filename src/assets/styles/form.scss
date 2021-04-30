@@ -67,7 +67,7 @@
     position: absolute;
     background-color: $red_1_rimac;
     top: 25px;
-    right: 235px;
+    left: 60px;
     transform: rotate(-45deg);
     &::after {
       content: " ";
@@ -87,6 +87,7 @@
     margin-bottom: 16px;
   }
   &__select__alt > &__select__arrow {
+    left: 90%;
     right: 25px;
   }
   &__select__alt > select {
