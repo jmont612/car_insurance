@@ -1,0 +1,69 @@
+@import "reset.scss";
+@import "variables.scss";
+@import "utilities.scss";
+@import "header.scss";
+@import "form.scss";
+@import "stepper.scss";
+
+.header {
+  grid-area: header;
+}
+
+.banner {
+  grid-area: banner;
+  background-color: $gray_7;
+  padding: 40px 30px 0;
+
+  &__caption {
+    color: inherit;
+  }
+  &__img {
+    position: absolute;
+    right: 0;
+  }
+  &__new {
+    display: block;
+    font-family: lato;
+    font-weight: 700;
+    font-size: 10px;
+    line-height: 18px;
+    letter-spacing: 0.8px;
+    margin-bottom: 10px;
+    color: $gray_1_titulos;
+  }
+  &__h1 {
+    font-family: lato;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 36px;
+    letter-spacing: -0.6px;
+    color: $gray_1_titulos;
+  }
+  &__h1--rimac {
+    color: $red_1_rimac;
+  }
+  &__p {
+    font-family: Roboto;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color: $gray_2_paragraph;
+    max-width: 183px;
+    margin-top: 10px;
+    margin-bottom: 50px;
+  }
+}
+.main {
+  grid-area: main;
+  padding: 50px 30px 0;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  grid-template-areas:
+    "header"
+    "banner"
+    "main";
+}
